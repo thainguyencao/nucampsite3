@@ -5,8 +5,10 @@
   "main": "index.html",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npm run lite",
-    "lite": "lite-server"
+    "start": "npm run watch:all",
+    "lite": "lite-server",
+    "watch:scss": "onchange \"css/*.scss\" -- npm run scss",
+    "watch:all": "parallelshell \"npm run watch:scss\" \"npm run lite\""
   },
   "repository": {
     "type": "git",
@@ -19,11 +21,14 @@
   },
   "homepage": "https://github.com/thainguyencao/nucampsite3#readme",
   "devDependencies": {
-    "lite-server": "^2.3.0"
+    "lite-server": "^2.3.0",
+    "onchange": "^3.3.0",
+    "parallelshell": "^3.0.1"
   },
   "dependencies": {
     "bootstrap": "^4.0.0",
     "bootstrap-social": "^5.1.1",
+    "connect-history-api-fallback": "^1.6.0",
     "font-awesome": "^4.7.0",
     "jquery": "^3.3.1",
     "popper.js": "^1.12.9"

@@ -1,0 +1,31 @@
+{
+  "name": "nucampsite3",
+  "version": "1.0.0",
+  "description": "This is a website for the fictional campsites review site NuCamp.",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run lite",
+    "lite": "lite-server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/thainguyencao/nucampsite3.git"
+  },
+  "author": "Thai Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/thainguyencao/nucampsite3/issues"
+  },
+  "homepage": "https://github.com/thainguyencao/nucampsite3#readme",
+  "devDependencies": {
+    "lite-server": "^2.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^4.0.0",
+    "bootstrap-social": "^5.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "popper.js": "^1.12.9"
+  }
+}
